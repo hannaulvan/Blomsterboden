@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta oss | Blomsterstationen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🌸 Blomsterstationen</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="produkt-1.html">Säsongens Bukett</a></li>
+                    <li><a href="produkt-2.html">Grön Lycka</a></li>
+                    <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
+                    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container form-container">
+        <h1>Kontakta oss</h1>
+        <p>Har du frågor inför ett bröllop, arrangemang eller företagsevent? Skicka ett meddelande till oss.</p>
+        
+        <form action="thank-you.html" method="GET" id="contact-form" onsubmit="return trackConversion('Kontaktforfragan', 'Kontaktformular', 0)">
+            <input type="hidden" name="type" value="contact">
+            
+            <div class="form-group">
+                <label for="contact-name">Namn</label>
+                <input type="text" id="contact-name" name="name" required placeholder="Ditt fullständiga namn">
+            </div>
+            
+            <div class="form-group">
+                <label for="contact-email">E-postadress</label>
+                <input type="email" id="contact-email" name="email" required placeholder="din.epost@doman.se">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Ärende</label>
+                <select id="subject" name="subject">
+                    <option value="allmant">Allmän fråga</option>
+                    <option value="brollop">Bröllop & Fest</option>
+                    <option value="foretag">Företagsblommor</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Meddelande</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Skriv ditt meddelande här..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Skicka meddelande</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blomsterstationen | Kursmaterial för Analys och Effektmätning</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

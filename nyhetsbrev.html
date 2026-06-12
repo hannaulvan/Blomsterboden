@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gå med i nyhetsbrevet | Blomsterstationen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🌸 Blomsterstationen</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="produkt-1.html">Säsongens Bukett</a></li>
+                    <li><a href="produkt-2.html">Grön Lycka</a></li>
+                    <li><a href="nyhetsbrev.html" class="active">Nyhetsbrev</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container form-container">
+        <h1>Håll dig uppdaterad</h1>
+        <p>Gå med i vår kundklubb och få exklusiva erbjudanden, skötselråd för dina växter samt inspiration inför varje ny säsong.</p>
+        
+        <form action="thank-you.html" method="GET" id="newsletter-form" onsubmit="return trackConversion('Lead', 'Nyhetsbrev', 0)">
+            <input type="hidden" name="type" value="newsletter">
+            
+            <div class="form-group">
+                <label for="name">Förnamn</label>
+                <input type="text" id="name" name="name" required placeholder="Skriv ditt förnamn">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-postadress</label>
+                <input type="email" id="email" name="email" required placeholder="namn@foretag.se">
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Jag godkänner att ni sparar min e-post för utskick.</label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Prenumerera</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blomsterstationen | Kursmaterial för Analys och Effektmätning</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

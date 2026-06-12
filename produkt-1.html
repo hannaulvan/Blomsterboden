@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Säsongens Bukett | Blomsterstationen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🌸 Blomsterstationen</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="produkt-1.html" class="active">Säsongens Bukett</a></li>
+                    <li><a href="produkt-2.html">Grön Lycka</a></li>
+                    <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container product-page">
+        <div class="product-layout">
+            <div class="product-gallery">
+                <div class="placeholder-image">🌸 [Bild: Säsongens Bukett]</div>
+            </div>
+            <div class="product-details">
+                <h1>Säsongens Bukett</h1>
+                <p class="price">295 kr</p>
+                <p class="description">Våra florister handplockar de finaste stjälkarna för veckan och skapar ett unikt arrangemang som passar perfekt på matbordet eller som en omtänksam gåva. Innehållet varierar beroende på tillgång och säsong.</p>
+                
+                <!-- Formulär / Konverteringsknapp -->
+                <form action="thank-you.html" method="GET" id="purchase-form-1" onsubmit="return trackConversion('Köp', 'Säsongens Bukett', 295)">
+                    <input type="hidden" name="item" value="sasongens_bukett">
+                    <input type="hidden" name="value" value="295">
+                    <button type="submit" class="btn btn-primary btn-block">Köp nu (Simulera konvertering)</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blomsterstationen | Kursmaterial för Analys och Effektmätning</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
